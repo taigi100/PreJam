@@ -14,8 +14,6 @@ var parent
 
 
 @export_range(0.0, 1.0) var mouse_sensitivity = 0.01
-@export var min_tilt = deg_to_rad(30)  # More horizontal view
-@export var max_tilt = deg_to_rad(85)  # Nearly top-down view
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -23,7 +21,7 @@ func _ready():
 	
 
 func _unhandled_input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("exit"):
+	if Input.is_action_just_pressed("exit"): 
 		get_tree().quit()
 		
 func _process(delta: float) -> void:
@@ -41,12 +39,20 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "up", "down")
-	var direction = (cam_h.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		rotation.y = lerp_angle(rotation.y, atan2(-direction.x, -direction.z), TURN_SPEED * delta)
+	# Transform input direction based on character's rotation
+	var move_dir = Vector3.ZERO
+	move_dir.x = input_dir.x
+	move_dir.z = input_dir.y  # Negative because forward is -Z in Godot
+	move_dir = move_dir.rotated(Vector3.UP, rotation.y)
+	
+	if move_dir:
+		velocity.x = move_dir.x * SPEED
+		velocity.z = move_dir.z * SPEED
 	else:
-		velocity.x = 0
-		velocity.z = 0
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
+
+	# Rotate the character to match camera's horizontal rotation
+	var target_rotation = cam_h.rotation.y
+	rotation.y = lerp_angle(rotation.y, target_rotation, TURN_SPEED * delta)
 	move_and_slide()
