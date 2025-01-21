@@ -29,7 +29,6 @@ func _process(delta: float) -> void:
 		"Attack":
 			look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
 	
-	print(_target_in_range())
 	animTree.set("parameters/conditions/attack", _target_in_range())
 	animTree.set("parameters/conditions/run", !_target_in_range())
 	

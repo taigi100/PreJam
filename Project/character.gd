@@ -9,9 +9,13 @@ const TURN_SPEED = 30
 
 var parent
 
+var bullet = load("res://enemy/bullet.tscn")
+var instance
+
 @onready var cam_h = %h as Node3D
 @onready var cam_v = %v as Node3D
-
+@onready var gun_anim = $Weapon/AnimationPlayer
+@onready var gun_barrel = $Weapon/RayCast3D
 
 @export_range(0.0, 1.0) var mouse_sensitivity = 0.01
 
@@ -55,4 +59,14 @@ func _physics_process(delta: float) -> void:
 	# Rotate the character to match camera's horizontal rotation
 	var target_rotation = cam_h.rotation.y
 	rotation.y = lerp_angle(rotation.y, target_rotation, TURN_SPEED * delta)
+	
+	if Input.is_action_pressed("attack"):
+		if !gun_anim.is_playing():
+			gun_anim.play("shoot")
+			instance = bullet.instantiate()
+			instance.position = gun_barrel.global_position
+			instance.transform.basis = gun_barrel.global_transform.basis
+			get_parent().add_child(instance)
+		
+	
 	move_and_slide()

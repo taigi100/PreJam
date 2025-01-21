@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2xqifo5birbu"]
+[gd_scene load_steps=10 format=3 uid="uid://b2xqifo5birbu"]
 
 [ext_resource type="Script" path="res://character.gd" id="1_kprj6"]
 [ext_resource type="Shader" path="res://shaders/outline.gdshader" id="2_2ucex"]
 [ext_resource type="Script" path="res://cam_movement.gd" id="2_wk707"]
 [ext_resource type="Shader" path="res://shaders/cel-shader-base.gdshader" id="3_2txc6"]
+[ext_resource type="PackedScene" uid="uid://dq178aonsbja" path="res://enemy/weapon.tscn" id="5_a4vup"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xlygi"]
 
@@ -38,6 +39,9 @@ surface_material_override/0 = SubResource("ShaderMaterial_0xcpl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Body"]
 shape = SubResource("ConvexPolygonShape3D_wk7w1")
+
+[node name="Weapon" parent="Body" instance=ExtResource("5_a4vup")]
+transform = Transform3D(0.11, 4.03233e-12, 1.45519e-11, 1.2264e-11, 0.11, 0.000191986, 0, -0.000191986, 0.11, 0.622522, -0.122122, -0.507514)
 
 [node name="CameraPivot" type="Node3D" parent="."]
 unique_name_in_owner = true
