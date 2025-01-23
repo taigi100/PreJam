@@ -60,3 +60,6 @@ func shoot():
 		can_shoot = false
 		await get_tree().create_timer(0.5).timeout  # Cooldown
 		can_shoot = true
+
+func take_damage(damage):
+	print("Player hit with %d damage" % damage)
