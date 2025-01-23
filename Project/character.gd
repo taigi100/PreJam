@@ -11,8 +11,9 @@ extends CharacterBody3D
 var bullet = load("res://enemy/bullet.tscn")
 var can_shoot = true
 
-func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+func _input(event: InputEvent):
+	if (Input.mouse_mode != Input.MOUSE_MODE_CAPTURED) and event is InputEventMouseButton: 
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("exit"): 
