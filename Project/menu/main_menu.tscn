@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccbdsn7spoaj7"]
+
+[ext_resource type="Script" path="res://menu/main_menu.gd" id="1_0lp6v"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0lp6v")
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.0
+offset_top = -575.0
+offset_right = 146.0
+offset_bottom = 575.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="AspectRatioContainer"]
+layout_mode = 2
+split_offset = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Play" type="Button" parent="AspectRatioContainer/HSplitContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Credits" type="Button" parent="AspectRatioContainer/HSplitContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="Exit" type="Button" parent="AspectRatioContainer/HSplitContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[node name="CreditsText" type="RichTextLabel" parent="AspectRatioContainer/HSplitContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+text = "Credits:
+test - tester
+test - tester
+test - tester"
+fit_content = true
+
+[connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
