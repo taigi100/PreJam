@@ -1,0 +1,43 @@
+[gd_scene load_steps=14 format=3 uid="uid://cu6b1fq32yuye"]
+
+[ext_resource type="PackedScene" uid="uid://5750qxyk063c" path="res://3dAssets/Doors/SlidingDoors.tscn" id="1_tbx8j"]
+[ext_resource type="PackedScene" uid="uid://bc3po225m8c6s" path="res://3dAssets/Floors/floor.tscn" id="2_8njvf"]
+[ext_resource type="PackedScene" uid="uid://dvwux0jbv5o33" path="res://3dAssets/Walls/Pillar.tscn" id="3_ckql8"]
+[ext_resource type="PackedScene" uid="uid://clbyg1jojoq32" path="res://3dAssets/Walls/wall_base.tscn" id="4_nxvx8"]
+[ext_resource type="PackedScene" uid="uid://bnhkcqpnbk4r" path="res://3dAssets/Walls/wall_bubble_left.tscn" id="5_crm83"]
+[ext_resource type="PackedScene" uid="uid://cjqiltj1gkwg0" path="res://3dAssets/Walls/wall_bubble_right.tscn" id="6_yybvy"]
+[ext_resource type="PackedScene" uid="uid://0gbexwff878h" path="res://3dAssets/Walls/wall_circle_bubble.tscn" id="7_vkc6c"]
+[ext_resource type="PackedScene" uid="uid://v3ane3sivj3g" path="res://3dAssets/Walls/wall_corner_slimeleft.tscn" id="8_t16lh"]
+[ext_resource type="PackedScene" uid="uid://chtcntfgsg8wx" path="res://3dAssets/Walls/wall_corner_slimeright.tscn" id="9_y50n8"]
+[ext_resource type="PackedScene" uid="uid://dlj8f6vak31s" path="res://3dAssets/Walls/wall_double_bubble.tscn" id="10_po0pv"]
+[ext_resource type="PackedScene" uid="uid://64i6l6ifmdl4" path="res://3dAssets/Walls/wall_door_frame.tscn" id="10_t4k38"]
+[ext_resource type="PackedScene" uid="uid://bbvi3s2f0tj12" path="res://3dAssets/Walls/wall_light.tscn" id="11_6ckai"]
+[ext_resource type="PackedScene" uid="uid://dhqvk1hjk4ils" path="res://3dAssets/Walls/wall_single_bubble.tscn" id="12_wbfgp"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Doors2" parent="." instance=ExtResource("1_tbx8j")]
+
+[node name="Floor" parent="." instance=ExtResource("2_8njvf")]
+
+[node name="Pillar2" parent="." instance=ExtResource("3_ckql8")]
+
+[node name="Wall_Base2" parent="." instance=ExtResource("4_nxvx8")]
+
+[node name="Wall_BubbleLeft2" parent="." instance=ExtResource("5_crm83")]
+
+[node name="Wall_BubbleRight2" parent="." instance=ExtResource("6_yybvy")]
+
+[node name="Wall_CircleBubble2" parent="." instance=ExtResource("7_vkc6c")]
+
+[node name="Wall_Corner22" parent="." instance=ExtResource("8_t16lh")]
+
+[node name="Wall_Corner2" parent="." instance=ExtResource("9_y50n8")]
+
+[node name="Wall_DoorFrame2" parent="." instance=ExtResource("10_t4k38")]
+
+[node name="Wall_DoubleBubble2" parent="." instance=ExtResource("10_po0pv")]
+
+[node name="Wall_Light2" parent="." instance=ExtResource("11_6ckai")]
+
+[node name="Wall_SingleBubble2" parent="." instance=ExtResource("12_wbfgp")]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://character.gd" id="1_kprj6"]
 [ext_resource type="Shader" path="res://shaders/outline.gdshader" id="2_2ucex"]
 [ext_resource type="Shader" path="res://shaders/cel-shader-base.gdshader" id="3_2txc6"]
-[ext_resource type="PackedScene" path="res://enemy/weapon.tscn" id="5_a4vup"]
+[ext_resource type="PackedScene" uid="uid://dq178aonsbja" path="res://enemy/weapon.tscn" id="5_a4vup"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xlygi"]
 
