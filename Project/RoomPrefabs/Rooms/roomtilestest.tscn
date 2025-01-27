@@ -1,0 +1,49 @@
+[gd_scene load_steps=16 format=3 uid="uid://dkcdfuafwlwyc"]
+
+[ext_resource type="PackedScene" uid="uid://qopdjw0k73l4" path="res://RoomPrefabs/Rooms/AShapeRoom.tscn" id="1_30eth"]
+[ext_resource type="PackedScene" uid="uid://cqgspypxoexxa" path="res://RoomPrefabs/Rooms/Circular2DoorRoom.tscn" id="2_7hxl6"]
+[ext_resource type="PackedScene" uid="uid://biq4oxqqqu1p6" path="res://RoomPrefabs/Rooms/Circular2LDoorRoom.tscn" id="3_ubl6j"]
+[ext_resource type="PackedScene" uid="uid://b2ni8goscoxpv" path="res://RoomPrefabs/Rooms/Circular2TDoorRoom.tscn" id="4_waq6u"]
+[ext_resource type="PackedScene" uid="uid://doujlap78y7wg" path="res://RoomPrefabs/Rooms/Circular4DoorRoom.tscn" id="5_bkoe5"]
+[ext_resource type="PackedScene" uid="uid://p4ry2wwy8dib" path="res://RoomPrefabs/Rooms/LShapeRoom.tscn" id="6_dwqf3"]
+[ext_resource type="PackedScene" uid="uid://cgchjk7br32y3" path="res://RoomPrefabs/Rooms/RectangleRoom.tscn" id="7_fv7e6"]
+[ext_resource type="PackedScene" uid="uid://pdhpdh5h70wr" path="res://RoomPrefabs/Rooms/RectangleWithSimpleCoverRoom.tscn" id="8_apcpw"]
+[ext_resource type="PackedScene" uid="uid://c53f2c66gpoi4" path="res://RoomPrefabs/Rooms/StartingRoom1.tscn" id="9_jj4yq"]
+[ext_resource type="PackedScene" uid="uid://hcnm4wwrpptq" path="res://RoomPrefabs/Rooms/XShapeRoom_2Door.tscn" id="10_ey6yt"]
+[ext_resource type="PackedScene" uid="uid://b2aa6uh0ml2hf" path="res://RoomPrefabs/Corridors/LongRightAngle_Corridor.tscn" id="11_2ii7o"]
+[ext_resource type="PackedScene" uid="uid://b4oppu34o1ukb" path="res://RoomPrefabs/Corridors/LongStraight_Corridor.tscn" id="12_atffo"]
+[ext_resource type="PackedScene" uid="uid://cx50gytfpsy7b" path="res://RoomPrefabs/Corridors/ShortRightAngle_Corridor.tscn" id="13_qk5l6"]
+[ext_resource type="PackedScene" uid="uid://vivoq5h4d4fh" path="res://RoomPrefabs/Corridors/ShortStraight_Corridor.tscn" id="14_pklp4"]
+[ext_resource type="PackedScene" uid="uid://cfis2xsqdmwyn" path="res://RoomPrefabs/Corridors/SShapeCorridor.tscn" id="15_c07dy"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_30eth")]
+
+[node name="Node3D2" parent="." instance=ExtResource("2_7hxl6")]
+
+[node name="Node3D3" parent="." instance=ExtResource("3_ubl6j")]
+
+[node name="Node3D4" parent="." instance=ExtResource("4_waq6u")]
+
+[node name="Node3D5" parent="." instance=ExtResource("5_bkoe5")]
+
+[node name="Node3D6" parent="." instance=ExtResource("6_dwqf3")]
+
+[node name="Node3D7" parent="." instance=ExtResource("7_fv7e6")]
+
+[node name="Node3D8" parent="." instance=ExtResource("8_apcpw")]
+
+[node name="StartingRoom1" parent="." instance=ExtResource("9_jj4yq")]
+
+[node name="Node3D9" parent="." instance=ExtResource("10_ey6yt")]
+
+[node name="Node3D10" parent="." instance=ExtResource("11_2ii7o")]
+
+[node name="Node3D11" parent="." instance=ExtResource("12_atffo")]
+
+[node name="Node3D12" parent="." instance=ExtResource("13_qk5l6")]
+
+[node name="Node3D13" parent="." instance=ExtResource("14_pklp4")]
+
+[node name="Node3D14" parent="." instance=ExtResource("15_c07dy")]
