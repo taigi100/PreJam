@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c1vyf8tcpfejs"
-path="res://.godot/imported/Prop_CountertopSink.glb-96cc1d93d197694961dae8bc62f1e8b9.scn"
+uid="uid://xhjalevhfg0q"
+path="res://.godot/imported/Stairs_Five_Rail.glb-e3bbb44404ae4614d9a8ed679d1502a8.scn"
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/Prop_CountertopSink.glb"
-dest_files=["res://.godot/imported/Prop_CountertopSink.glb-96cc1d93d197694961dae8bc62f1e8b9.scn"]
+source_file="res://Materials/OurTextures/PropMaterials/Stairs_Five_Rail.glb"
+dest_files=["res://.godot/imported/Stairs_Five_Rail.glb-e3bbb44404ae4614d9a8ed679d1502a8.scn"]
 
 [params]
 

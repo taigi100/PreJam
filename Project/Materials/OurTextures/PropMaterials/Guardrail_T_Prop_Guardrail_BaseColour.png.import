@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c85qldfrxwjcp"
-path.s3tc="res://.godot/imported/Prop_Countertop_T_Prop_Countertop_M-T_Prop_Countertop_R.png-a4a763d44ced1a4e84a7a6e168564905.s3tc.ctex"
+uid="uid://fl8dopaoddk7"
+path.s3tc="res://.godot/imported/Guardrail_T_Prop_Guardrail_BaseColour.png-d102c28202fb385c5bd4e529cac95daa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "f3d31ff6bac3ae430cdb9eb39194bf53"
+"md5": "0b1b6c66f3e4e943418d1e3558b2ddda"
 }
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/Prop_Countertop_T_Prop_Countertop_M-T_Prop_Countertop_R.png"
-dest_files=["res://.godot/imported/Prop_Countertop_T_Prop_Countertop_M-T_Prop_Countertop_R.png-a4a763d44ced1a4e84a7a6e168564905.s3tc.ctex"]
+source_file="res://Materials/OurTextures/PropMaterials/Guardrail_T_Prop_Guardrail_BaseColour.png"
+dest_files=["res://.godot/imported/Guardrail_T_Prop_Guardrail_BaseColour.png-d102c28202fb385c5bd4e529cac95daa.s3tc.ctex"]
 
 [params]
 

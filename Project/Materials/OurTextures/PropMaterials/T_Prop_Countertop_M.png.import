@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2l6140qxqx13"
-path="res://.godot/imported/T_Prop_Countertop_M.png-7e88a916035f54b73eb18907e4cd9165.ctex"
+path="res://.godot/imported/T_Prop_Countertop_M.png-f6af32dd12df4f18a4826a17041c13fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/T_Prop_Countertop_M.png"
-dest_files=["res://.godot/imported/T_Prop_Countertop_M.png-7e88a916035f54b73eb18907e4cd9165.ctex"]
+source_file="res://Materials/OurTextures/PropMaterials/T_Prop_Countertop_M.png"
+dest_files=["res://.godot/imported/T_Prop_Countertop_M.png-f6af32dd12df4f18a4826a17041c13fd.ctex"]
 
 [params]
 

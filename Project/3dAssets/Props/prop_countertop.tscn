@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://c5u32ftol02r4"]
+[gd_scene load_steps=7 format=4 uid="uid://c5u32ftol02r4"]
 
-[ext_resource type="Texture2D" uid="uid://bsnpab0msatey" path="res://3dAssets/Props/PropTextures/Prop_Countertop_T_Prop_Countertop.png" id="1_i2c4s"]
-[ext_resource type="Texture2D" uid="uid://c85qldfrxwjcp" path="res://3dAssets/Props/PropTextures/Prop_Countertop_T_Prop_Countertop_M-T_Prop_Countertop_R.png" id="2_xyqro"]
+[ext_resource type="Texture2D" uid="uid://bsnpab0msatey" path="res://Materials/OurTextures/PropMaterials/Prop_Countertop_T_Prop_Countertop.png" id="1_i2c4s"]
+[ext_resource type="Texture2D" uid="uid://c85qldfrxwjcp" path="res://Materials/OurTextures/PropMaterials/Prop_Countertop_T_Prop_Countertop_M-T_Prop_Countertop_R.png" id="2_xyqro"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a6vc8"]
 resource_name = "Material.002"
@@ -47,9 +47,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mhuoc")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_siul1"]
+points = PackedVector3Array(0.41, 1.2, -0.65, 0.41, 0, -0.65, 0.41, 1.2, -1.45, -1.41, 1.2, -0.65, 0.41, 0, -1.45, -1.41, 0, -0.65, -1.41, 1.2, -1.45, -1.41, 0, -1.45)
+
 [node name="Prop_Countertop2" type="Node3D"]
 
 [node name="Prop_Countertop" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_rd71v")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Countertop"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Countertop/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_siul1")

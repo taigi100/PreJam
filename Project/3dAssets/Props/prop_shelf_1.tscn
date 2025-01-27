@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=4 uid="uid://dvmxf7u23jjc1"]
+
+[ext_resource type="Texture2D" uid="uid://br3feee5pgi6h" path="res://Materials/OurTextures/PropMaterials/Prop_Shelf1_T_Props_Shelves_BaseColour.png" id="1_ogw5i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36b30"]
+resource_name = "Shelves"
+cull_mode = 2
+albedo_texture = ExtResource("1_ogw5i")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_veorh"]
+_surfaces = [{
+"aabb": AABB(-1, 0, -0.55, 2, 2, 1),
+"format": 34896613377,
+"index_count": 264,
+"index_data": PackedByteArray("CQADAAEACQAKAAMAEAAWABEAEAAXABYADAAFAAcADAAOAAUAAgAEAAYAAgAAAAQABwABAAMABwAFAAEABgAPAA0ABgAEAA8ADQAOAAwADQAPAA4AGQAjACIAGQAYACMAHQAnACYAHQAcACcAAAALAAgAAAACAAsACAAKAAkACAALAAoACgARAAMACgAQABEAAwASAAcAAwARABIABwATAAwABwASABMADAAQAAoADAATABAADgAVAAUADgAUABUABQAWAAEABQAVABYAAQAXAAkAAQAWABcACQAUAA4ACQAXABQABAAZAA8ABAAYABkADwAaAAgADwAZABoACAAbAAAACAAaABsAAAAYAAQAAAAbABgADwAdAA4ADwAcAB0ADgAeAAkADgAdAB4ACQAfAAgACQAeAB8ACAAcAA8ACAAfABwAAgAhAAsAAgAgACEACwAiAA0ACwAhACIADQAjAAYADQAiACMABgAgAAIABgAjACAACwAlAAoACwAkACUACgAmAAwACgAlACYADAAnAA0ADAAmACcADQAkAAsADQAnACQAEgAWABUAEgARABYAEwAVABQAEwASABUAEAAUABcAEAATABQAHgAmACUAHgAdACYAHwAlACQAHwAeACUAHAAkACcAHAAfACQAGgAiACEAGgAZACIAGwAhACAAGwAaACEAGAAgACMAGAAbACAA"),
+"name": "Shelves",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAD//wAA//8AAP///////wAA//8AAAAAAAD/////AAAAAAAAVVX//wAAAACqqv//AAAAAKmqAAAAAAAAVFUAAAAA//+pqgAAAAD//1RVAAAAAP//qar//wAA//9UVf//AAClCE+zAAAAAKUIWfcAAAAAWfdZ9wAAAABZ90+zAAAAAFn3T7P//wAAWfdZ9///AAClCFn3//8AAKUIT7P//wAAWfelCP//AABZ969M//8AAKUIr0z//wAApQilCP//AABZ9/pd//8AAFn3BKL//wAApQgEov//AAClCPpd//8AAKUIpQgAAAAApQivTAAAAABZ969MAAAAAFn3pQgAAAAApQj6XQAAAAClCASiAAAAAFn3BKIAAAAAWff6XQAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fmim2"]
+resource_name = "Prop_Shelf1_Cube_030"
+_surfaces = [{
+"aabb": AABB(-1, 0, -0.55, 2, 2, 1),
+"attribute_data": PackedByteArray("Ky2fn38BP7/wfHfFKy1fYGisLyC2zYnMhYRfYCstP78ZihIvhYQfIWis3Eve2iM2hYSfn38B/39l0ETLhYRfYComLyCdfhzEKy1fYCst/3903f41Ky0fISom3Eusi9cuKy2Kit2X0scrLXR1ybIuyoWENDbyv8gzhYRKSwWlbTErLTQ276Y5MSstSksxwpwzhYR0deCZfsaFhIqKIrXhyJGBETTP74PBrGnFb5GBQiNjRN/e44DFbx8wQiPVld/eVtLFbx8wETQJfYPBjenFb5GBUXMJfU6MjeklUJGBgmLVlT+/VtIlUB8wgmJjRD+/44AlUB8wUXPP706MrGklUJGBfJ0JfYPBjenFb5GBrYzVld/eVtLFbx8wrYxjRN/e44DFbx8wfJ3P74PBrGnFb5GBZ4gJfRlXjemFMJGBl3fVlZ+fVtKFMB8wl3djRJ+f44CFMB8wZ4jP7xlXrGmFMJGBPF7P77j2rGllj5GBbE1jRH/+44Bljx8wbE3VlX/+VtJljx8wPF4Jfbj2jellj5GBJ0nP706MrGklUJGBVzhjRD+/44AlUB8wVzjVlT+/VtIlUB8wJ0kJfU6MjeklUA=="),
+"format": 34896613399,
+"index_count": 264,
+"index_data": PackedByteArray("GwALAAUAGwAdAAsAKgA8AC0AKgA/ADwAIQARABcAIQAlABEABwANABMABwABAA0AFgAEAAoAFgAQAAQAFAAnACMAFAAOACcAIwAlACEAIwAnACUARQBjAGAARQBCAGMAUQBvAGwAUQBOAG8AAgAfABkAAgAIAB8AGQAdABsAGQAfAB0AHAArAAkAHAAoACsACQAuABUACQArAC4AFQAxACAAFQAuADEAIAAoABwAIAAxACgAJAA3AA8AJAA0ADcADwA6AAMADwA3ADoAAwA9ABoAAwA6AD0AGgA0ACQAGgA9ADQADABDACYADABAAEMAJgBGABgAJgBDAEYAGABJAAAAGABGAEkAAABAAAwAAABJAEAAJgBPACQAJgBMAE8AJABSABoAJABPAFIAGgBVABgAGgBSAFUAGABMACYAGABVAEwABgBbAB4ABgBYAFsAHgBeACIAHgBbAF4AIgBhABIAIgBeAGEAEgBYAAYAEgBhAFgAHgBnABwAHgBkAGcAHABqACAAHABnAGoAIABtACIAIABqAG0AIgBkAB4AIgBtAGQALwA7ADgALwAsADsAMwA5ADYAMwAwADkAKQA1AD4AKQAyADUAUwBrAGgAUwBQAGsAVwBpAGYAVwBUAGkATQBlAG4ATQBWAGUARwBfAFwARwBEAF8ASwBdAFoASwBIAF0AQQBZAGIAQQBKAFkA"),
+"material": SubResource("StandardMaterial3D_36b30"),
+"name": "Shelves",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 112,
+"vertex_data": PackedByteArray("AAAAAP//AIAAAAAA//9U1QAAAAD//+LVAAD/////AIAAAP///////wAA/////+LVAAAAAAAA//8AAAAAAABU1QAAAAAAAOLVAAD//wAA//8AAP//AAD//wAA//8AAOLV//8AAP//AID//wAA//9U1f//AAD//8TU////////AID//////////////////8TU//8AAAAA/////wAAAABU1f//AAAAAMTU/////wAA////////AAD///////8AAMTUAABVVf//AIAAAFVV///i1QAAqqr//wCAAACqqv//4tUAAKmqAAD//wAAqaoAAOLVAABUVQAA//8AAFRVAADi1f//qaoAAP////+pqgAAxNT//1RVAAD/////VFUAAMTU//+pqv//AID//6mq///E1P//VFX//wCA//9UVf//xNSlCE+zAAD//6UIT7MAAP//pQhPswAAVNWlCFn3AAD//6UIWfcAAP+/pQhZ9wAAVNVZ91n3AAD//1n3WfcAAP+/WfdZ9wAAVNVZ90+zAAD//1n3T7MAAP//WfdPswAAVNVZ90+z//8AgFn3T7P/////WfdPs///VNVZ91n3//8AgFn3Wff///+/WfdZ9///VNWlCFn3//8AgKUIWff///+/pQhZ9///VNWlCE+z//8AgKUIT7P/////pQhPs///VNVZ96UI//8AgFn3pQj/////WfelCP//VNVZ969M//8AgFn3r0z///+/WfevTP//VNWlCK9M//8AgKUIr0z///+/pQivTP//VNWlCKUI//8AgKUIpQj/////pQilCP//VNVZ9/pd//8AgFn3+l3/////Wff6Xf//VNVZ9wSi//8AgFn3BKL///+/WfcEov//VNWlCASi//8AgKUIBKL///+/pQgEov//VNWlCPpd//8AgKUI+l3/////pQj6Xf//VNWlCKUIAAD//6UIpQgAAP//pQilCAAAVNWlCK9MAAD//6UIr0wAAP+/pQivTAAAVNVZ969MAAD//1n3r0wAAP+/WfevTAAAVNVZ96UIAAD//1n3pQgAAP//WfelCAAAVNWlCPpdAAD//6UI+l0AAP//pQj6XQAAVNWlCASiAAD//6UIBKIAAP+/pQgEogAAVNVZ9wSiAAD//1n3BKIAAP+/WfcEogAAVNVZ9/pdAAD//1n3+l0AAP//Wff6XQAAVNX/f///VFVUVf7V/9T/f////3//v/7V/9T/f/7/VFVUVf7V/9T/f/7//3//v/7V/9T/f///VFVUVVKqpVT/f////3//v1KqpVT/f/7/VFVUVVKqpVT/f/7//3//v1KqpVT/f////tX/1P9////+1f/U/3/+//7V/9T/f/7//tX/1P9//v9SqqVU/3/+/1KqpVT/f///UqqlVP9///9SqqVU/3/+//9//7+qKqoq/3/+/wAA/3+qKqoq/3/+/wAA/39UVaqq/3/+//9//79UVaqq/3////9//79UVaqq/3///wAA/39UVaqq/3///wAA/3+qKqoq/3////9//7+qKqoq/3////9//79UVaqq/3///wAA/39UVaqq/3///wAA/3+qKqoq/3////9//7+qKqoq/3////9//79UVaqq/3///wAA/39UVaqq/3///wAA/3+qKqoq/3////9//7+qKqoq/3/+//9//7+qKqoq/3/+/wAA/3+qKqoq/3/+/wAA/39UVaqq/3/+//9//79UVaqq/3/+//9//7+qKqoq/3/+/wAA/3+qKqoq/3/+/wAA/39UVaqq/3////9//79UVaqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_veorh")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qa5tt"]
+points = PackedVector3Array(1, 2, 0.45, 1, 0, 0.45, 1, 2, -0.55, -1, 2, 0.45, 1, 0, -0.55, -1, 0, 0.45, -1, 2, -0.55, -1, 0, -0.55)
+
+[node name="Prop_Shelf1" type="Node3D"]
+
+[node name="Prop_Shelf" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_fmim2")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Shelf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Shelf/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_qa5tt")

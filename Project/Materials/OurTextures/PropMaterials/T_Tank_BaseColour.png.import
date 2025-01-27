@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byyihk3td3fu2"
-path="res://.godot/imported/T_Prop_Countertop_R.png-fa98414a3a68469f1892dcb667366b7e.ctex"
+uid="uid://n7x812rhqehj"
+path="res://.godot/imported/T_Tank_BaseColour.png-b5c66f00594f625b9cf46da72b2aa46a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/T_Prop_Countertop_R.png"
-dest_files=["res://.godot/imported/T_Prop_Countertop_R.png-fa98414a3a68469f1892dcb667366b7e.ctex"]
+source_file="res://Materials/OurTextures/PropMaterials/T_Tank_BaseColour.png"
+dest_files=["res://.godot/imported/T_Tank_BaseColour.png-b5c66f00594f625b9cf46da72b2aa46a.ctex"]
 
 [params]
 

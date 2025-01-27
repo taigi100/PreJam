@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bmleytev7608n"
-path="res://.godot/imported/Prop_Countertop.glb-59c19b2da20885d954246ff0d41b375a.scn"
+uid="uid://c1vyf8tcpfejs"
+path="res://.godot/imported/Prop_CountertopSink.glb-1031e20777f97a7cfa87cdab68322f5d.scn"
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/Prop_Countertop.glb"
-dest_files=["res://.godot/imported/Prop_Countertop.glb-59c19b2da20885d954246ff0d41b375a.scn"]
+source_file="res://Materials/OurTextures/PropMaterials/Prop_CountertopSink.glb"
+dest_files=["res://.godot/imported/Prop_CountertopSink.glb-1031e20777f97a7cfa87cdab68322f5d.scn"]
 
 [params]
 

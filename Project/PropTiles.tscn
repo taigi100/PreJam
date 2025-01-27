@@ -1,0 +1,40 @@
+[gd_scene load_steps=13 format=3 uid="uid://crritepoa1qy0"]
+
+[ext_resource type="PackedScene" uid="uid://vk8o72erhmqr" path="res://3dAssets/Props/guardrail.tscn" id="1_12s4n"]
+[ext_resource type="PackedScene" uid="uid://csagmnp6qbmtr" path="res://3dAssets/Props/prop_cart_2.tscn" id="2_ptv3m"]
+[ext_resource type="PackedScene" uid="uid://bxckbh6adk01p" path="res://3dAssets/Props/prop_cart_wheels_2.tscn" id="3_j3orp"]
+[ext_resource type="PackedScene" uid="uid://buuy8g2g8fngr" path="res://3dAssets/Props/prop_chair_2.tscn" id="4_sp50a"]
+[ext_resource type="PackedScene" uid="uid://c5u32ftol02r4" path="res://3dAssets/Props/prop_countertop.tscn" id="5_vgku4"]
+[ext_resource type="PackedScene" uid="uid://6sw3rfvgjy2o" path="res://3dAssets/Props/prop_countertop_sink_2.tscn" id="6_bld3e"]
+[ext_resource type="PackedScene" uid="uid://dvmxf7u23jjc1" path="res://3dAssets/Props/prop_shelf_1.tscn" id="7_8o6bg"]
+[ext_resource type="PackedScene" uid="uid://b812oyrink813" path="res://3dAssets/Props/prop_shelf_2.tscn" id="8_wturk"]
+[ext_resource type="PackedScene" uid="uid://iovojo7an2ba" path="res://3dAssets/Props/prop_tank_2.tscn" id="9_5v8f8"]
+[ext_resource type="PackedScene" uid="uid://cw7kshq5g7cxp" path="res://3dAssets/Props/stairs_five_2.tscn" id="10_hgoa0"]
+[ext_resource type="PackedScene" uid="uid://ndreytwem46i" path="res://3dAssets/Props/stairs_three_2.tscn" id="11_crres"]
+[ext_resource type="PackedScene" uid="uid://2yhaxcxwqoni" path="res://3dAssets/Props/stairs_three_rail_2.tscn" id="12_1yf2u"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Guardrail" parent="." instance=ExtResource("1_12s4n")]
+
+[node name="Prop_Cart2" parent="." instance=ExtResource("2_ptv3m")]
+
+[node name="Prop_Cart_Wheels2" parent="." instance=ExtResource("3_j3orp")]
+
+[node name="Prop_Chair2" parent="." instance=ExtResource("4_sp50a")]
+
+[node name="Prop_Countertop2" parent="." instance=ExtResource("5_vgku4")]
+
+[node name="Prop_CountertopSink2" parent="." instance=ExtResource("6_bld3e")]
+
+[node name="Prop_Shelf1" parent="." instance=ExtResource("7_8o6bg")]
+
+[node name="Prop_Shelf2" parent="." instance=ExtResource("8_wturk")]
+
+[node name="Prop_Tank2" parent="." instance=ExtResource("9_5v8f8")]
+
+[node name="Stairs_Five2" parent="." instance=ExtResource("10_hgoa0")]
+
+[node name="Stairs_Three2" parent="." instance=ExtResource("11_crres")]
+
+[node name="Stairs_Three_Rail2" parent="." instance=ExtResource("12_1yf2u")]

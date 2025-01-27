@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsnpab0msatey"
-path.s3tc="res://.godot/imported/Prop_Countertop_T_Prop_Countertop.png-ad7070e251a23aa1ea01e9d68f2db50d.s3tc.ctex"
+uid="uid://r484x555nveh"
+path.s3tc="res://.godot/imported/Prop_Cart_Wheels_T_Cart_BaseColour.png-9a7bb842892bdf8c816ed766e466ff11.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "c9738379fdddcf329945093332816590"
+"md5": "3f0c941a7cc632c7b961b442571da1c2"
 }
 
 [deps]
 
-source_file="res://3dAssets/Props/PropTextures/Prop_Countertop_T_Prop_Countertop.png"
-dest_files=["res://.godot/imported/Prop_Countertop_T_Prop_Countertop.png-ad7070e251a23aa1ea01e9d68f2db50d.s3tc.ctex"]
+source_file="res://Materials/OurTextures/PropMaterials/Prop_Cart_Wheels_T_Cart_BaseColour.png"
+dest_files=["res://.godot/imported/Prop_Cart_Wheels_T_Cart_BaseColour.png-9a7bb842892bdf8c816ed766e466ff11.s3tc.ctex"]
 
 [params]
 
