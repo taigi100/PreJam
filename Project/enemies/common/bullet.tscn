@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=3 uid="uid://bjoc64xut3mr5"]
+
+[ext_resource type="Script" path="res://enemies/common/bullet.gd" id="1_exiag"]
+[ext_resource type="Texture2D" uid="uid://dj0n5diskroak" path="res://enemies/common/bullet_assets/SlimeBall_basecolor.tga" id="2_yfgso"]
+[ext_resource type="Texture2D" uid="uid://dic3j7xyg3q0e" path="res://enemies/common/bullet_assets/SlimeBall_Materia_l_Emissive.tga" id="3_yohxf"]
+[ext_resource type="Texture2D" uid="uid://jswxp5543pgv" path="res://enemies/common/bullet_assets/SlimeBall_height.tga" id="4_a426s"]
+[ext_resource type="Texture2D" uid="uid://dposqphfughs1" path="res://enemies/common/bullet_assets/SlimeBall_metallic.tga" id="5_jiy33"]
+[ext_resource type="Texture2D" uid="uid://u8xd23lb861f" path="res://enemies/common/bullet_assets/SlimeBall_normal.tga" id="6_e5emb"]
+[ext_resource type="Texture2D" uid="uid://cge2ggcqwe75d" path="res://enemies/common/bullet_assets/SlimeBall_roughness.tga" id="7_fwh8c"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_shdrt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nvq0v"]
+albedo_texture = ExtResource("2_yfgso")
+metallic = 1.0
+metallic_specular = 0.6
+metallic_texture = ExtResource("5_jiy33")
+roughness_texture = ExtResource("7_fwh8c")
+emission_enabled = true
+emission_texture = ExtResource("3_yohxf")
+normal_enabled = true
+normal_texture = ExtResource("6_e5emb")
+rim = 0.0
+rim_tint = 1.0
+clearcoat_roughness = 0.32
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_a426s")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_flvih"]
+
+[node name="Bullet" type="CharacterBody3D"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+script = ExtResource("1_exiag")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_shdrt")
+surface_material_override/0 = SubResource("StandardMaterial3D_nvq0v")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.10264, 0, 0, 0.534609)
+target_position = Vector3(0, 0, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_flvih")
