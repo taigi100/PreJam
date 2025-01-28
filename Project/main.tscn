@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://4rsab58p3nx5"]
 
-[ext_resource type="PackedScene" uid="uid://b2xqifo5birbu" path="res://player.tscn" id="1_q174u"]
-[ext_resource type="PackedScene" uid="uid://bqm2arb87u3co" path="res://camera.tscn" id="2_0owse"]
-[ext_resource type="PackedScene" uid="uid://b8cr4x7boog4u" path="res://enemy/mouse.tscn" id="3_mmsdq"]
+[ext_resource type="PackedScene" uid="uid://b2xqifo5birbu" path="res://player/player.tscn" id="1_q174u"]
+[ext_resource type="PackedScene" uid="uid://cxk1gi2kvw4d2" path="res://enemies/ranged_enemy/ranged_mouse.tscn" id="3_mlaix"]
+[ext_resource type="PackedScene" uid="uid://b8cr4x7boog4u" path="res://enemies/melee_enemy/mouse.tscn" id="3_mmsdq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p4edb"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -36,10 +36,6 @@ environment = SubResource("Environment_nw7wt")
 
 [node name="Player" parent="." instance=ExtResource("1_q174u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10616, -0.378699)
-camera_pivot = NodePath("../CameraPivot")
-
-[node name="CameraPivot" parent="." instance=ExtResource("2_0owse")]
-player = NodePath("../Player")
 
 [node name="mouse-mixamo" parent="." instance=ExtResource("3_mmsdq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.89593, -0.255363, -4.72816)
@@ -83,3 +79,7 @@ transform = Transform3D(0.00129187, -0.0670021, 4.25804, -2.35641e-05, 60.2871, 
 use_collision = true
 size = Vector3(1, 0.0717773, 1)
 material = SubResource("StandardMaterial3D_4cny8")
+
+[node name="mouse-mixamo2" parent="." instance=ExtResource("3_mlaix")]
+transform = Transform3D(-0.603403, 0, -0.797437, 0, 1, 0, 0.797437, 0, -0.603403, 0, 0, -10.8472)
+player_path = NodePath("../Player")
