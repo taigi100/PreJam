@@ -1,4 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://6sw3rfvgjy2o"]
+[gd_scene load_steps=9 format=4 uid="uid://6sw3rfvgjy2o"]
+
+[ext_resource type="Texture2D" uid="uid://cbjfd8nfw6im0" path="res://Materials/OurTextures/AdditionalPropMaterials/T_Prop_Countertop.png" id="1_d1maw"]
+[ext_resource type="Texture2D" uid="uid://ltjjilctk0vg" path="res://Materials/OurTextures/AdditionalPropMaterials/T_Prop_Countertop_M.png" id="2_rcsu6"]
+[ext_resource type="Texture2D" uid="uid://b4mhsi08g7soc" path="res://Materials/OurTextures/AdditionalPropMaterials/T_Prop_Countertop_R.png" id="3_1jekm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ccnfd"]
 
@@ -34,6 +38,12 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_16wce")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_of6w1"]
+albedo_texture = ExtResource("1_d1maw")
+metallic = 1.0
+metallic_texture = ExtResource("2_rcsu6")
+roughness_texture = ExtResource("3_1jekm")
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jdyw7"]
 points = PackedVector3Array(0.289213, 1.46684, -1.02502, 0.41, 1.19992, -0.65, 0.289213, 1.46684, -1.07506, 0.107142, 1.46612, -1.02502, -1.41, 1.19992, -0.65, 0.41, 0, -0.65, 0.41, 1.19992, -1.45, -1.41, 1.19992, -1.45, 0.107142, 1.46612, -1.07506, -1.41, 0, -0.65, 0.41, 0, -1.45, -1.41, 0, -1.45)
 
@@ -43,6 +53,7 @@ points = PackedVector3Array(0.289213, 1.46684, -1.02502, 0.41, 1.19992, -0.65, 0
 transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_r0tj3")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_of6w1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Prop_CountertopSink"]
 

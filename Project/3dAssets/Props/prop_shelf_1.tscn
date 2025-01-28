@@ -45,11 +45,14 @@ points = PackedVector3Array(1, 2, 0.45, 1, 0, 0.45, 1, 2, -0.55, -1, 2, 0.45, 1,
 
 [node name="Prop_Shelf1" type="Node3D"]
 
-[node name="Prop_Shelf" type="MeshInstance3D" parent="."]
+[node name="Prop_Shelf1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Prop_Shelf" type="MeshInstance3D" parent="Prop_Shelf1"]
 mesh = SubResource("ArrayMesh_fmim2")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Shelf"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Shelf1/Prop_Shelf"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Shelf/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Shelf1/Prop_Shelf/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_qa5tt")

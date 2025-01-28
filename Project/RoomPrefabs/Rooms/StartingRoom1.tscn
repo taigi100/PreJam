@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c53f2c66gpoi4"]
+[gd_scene load_steps=7 format=3 uid="uid://c53f2c66gpoi4"]
 
 [ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://CorrectMeshLibraries/RoomTiles.tres" id="1_i5as0"]
-[ext_resource type="MeshLibrary" uid="uid://d3j7gsaevu0go" path="res://CorrectMeshLibraries/PropTiles.tres" id="2_0q5tf"]
+[ext_resource type="PackedScene" uid="uid://btn0ejqg64stb" path="res://3dAssets/Props/prop_tank_1.tscn" id="2_g7gje"]
+[ext_resource type="PackedScene" uid="uid://b812oyrink813" path="res://3dAssets/Props/prop_shelf_2.tscn" id="3_rsnr4"]
+[ext_resource type="PackedScene" uid="uid://6sw3rfvgjy2o" path="res://3dAssets/Props/prop_countertop_sink_2.tscn" id="4_4hu04"]
+[ext_resource type="PackedScene" uid="uid://c5u32ftol02r4" path="res://3dAssets/Props/prop_countertop.tscn" id="5_6novo"]
+[ext_resource type="PackedScene" uid="uid://buuy8g2g8fngr" path="res://3dAssets/Props/prop_chair_2.tscn" id="6_r56tm"]
 
 [node name="StartingRoom1" type="Node3D"]
 
@@ -9,14 +13,132 @@
 mesh_library = ExtResource("1_i5as0")
 cell_size = Vector3(3, 1, 3)
 data = {
-"cells": PackedInt32Array(0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 3, 1, 1, 3, 2, 1, 3, 3, 1, 3, 4, 1, 2, 4, 1, 1, 4, 1, 1, 3, 1, 2, 3, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 0, 5, 1, 1, 5, 1, 2, 5, 1, 3, 5, 1, 3, 6, 1, 2, 6, 1, 1, 6, 1, 0, 6, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 65537, 8, 9, 65539, 0, 1441800, 65536, 0, 1048583, 65537, 0, 3, 65538, 0, 3, 65539, 1, 1441796, 65536, 1, 1048581, 65539, 2, 1441795, 65536, 2, 1048579, 65536, 3, 1048579, 65539, 3, 1441795, 65539, 4, 1441795, 65536, 4, 1048579, 65539, 8, 6, 65536, 8, 6, 65539, 5, 1441795, 65539, 6, 1441795, 65539, 7, 1441795, 65536, 5, 1048579, 65536, 6, 1048579, 65536, 7, 1048579, 3, 8, 1, 2, 8, 1, 1, 8, 1, 0, 8, 1, 65535, 8, 1, 4, 8, 1, 5, 8, 1, 65534, 8, 1, 6, 8, 1, 65533, 8, 1, 7, 8, 1, 8, 8, 1, 9, 8, 1, 10, 8, 1, 11, 8, 1, 65532, 8, 1, 65531, 8, 1, 65530, 8, 1, 65529, 8, 1, 65528, 8, 1, 65528, 9, 1, 65528, 10, 1, 65528, 11, 1, 65528, 12, 1, 65528, 13, 1, 65528, 14, 1, 65528, 15, 1, 65528, 16, 1, 65528, 17, 1, 65529, 17, 1, 65530, 17, 1, 65531, 17, 1, 65532, 17, 1, 65533, 17, 1, 65534, 17, 1, 65535, 17, 1, 0, 17, 1, 1, 17, 1, 2, 17, 1, 3, 17, 1, 4, 17, 1, 7, 17, 1, 8, 17, 1, 9, 17, 1, 10, 17, 1, 10, 16, 1, 10, 15, 1, 10, 14, 1, 10, 13, 1, 10, 12, 1, 10, 11, 1, 10, 10, 1, 10, 9, 1, 11, 9, 1, 11, 10, 1, 11, 11, 1, 11, 12, 1, 11, 13, 1, 11, 15, 1, 11, 14, 1, 11, 17, 1, 11, 16, 1, 65529, 9, 1, 65529, 10, 1, 65529, 11, 1, 65529, 12, 1, 65529, 13, 1, 65529, 14, 1, 65529, 15, 1, 65529, 16, 1, 65530, 9, 1, 65530, 10, 1, 65530, 11, 1, 65530, 12, 1, 65530, 13, 1, 65530, 14, 1, 65530, 15, 1, 65530, 16, 1, 65531, 9, 1, 65531, 10, 1, 65531, 11, 1, 65531, 12, 1, 65531, 13, 1, 65531, 14, 1, 65531, 15, 1, 65531, 16, 1, 65532, 9, 1, 65532, 10, 1, 65532, 11, 1, 65532, 12, 1, 65532, 13, 1, 65532, 14, 1, 65532, 15, 1, 65532, 16, 1, 65533, 9, 1, 65533, 10, 1, 65533, 11, 1, 65533, 12, 1, 65533, 13, 1, 65533, 14, 1, 65533, 15, 1, 65533, 16, 1, 65534, 9, 1, 65534, 10, 1, 65534, 11, 1, 65534, 12, 1, 65534, 13, 1, 65534, 14, 1, 65534, 15, 1, 65534, 16, 1, 65535, 9, 1, 65535, 10, 1, 65535, 11, 1, 65535, 12, 1, 65535, 13, 1, 65535, 14, 1, 65535, 15, 1, 65535, 16, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 1, 9, 1, 1, 10, 1, 1, 11, 1, 1, 12, 1, 1, 13, 1, 1, 14, 1, 1, 15, 1, 1, 16, 1, 2, 9, 1, 2, 10, 1, 2, 11, 1, 2, 12, 1, 2, 13, 1, 2, 14, 1, 2, 15, 1, 2, 16, 1, 3, 9, 1, 3, 10, 1, 3, 11, 1, 3, 12, 1, 3, 13, 1, 3, 14, 1, 3, 15, 1, 3, 16, 1, 4, 9, 1, 4, 10, 1, 4, 11, 1, 4, 12, 1, 4, 13, 1, 4, 14, 1, 4, 15, 1, 4, 16, 1, 5, 9, 1, 5, 10, 1, 5, 11, 1, 5, 12, 1, 5, 13, 1, 5, 14, 1, 5, 15, 1, 5, 16, 1, 6, 9, 1, 6, 10, 1, 6, 11, 1, 6, 12, 1, 6, 13, 1, 6, 14, 1, 6, 15, 1, 7, 9, 1, 7, 10, 1, 7, 11, 1, 7, 12, 1, 7, 13, 1, 7, 14, 1, 8, 9, 1, 8, 10, 1, 8, 11, 1, 8, 12, 1, 8, 13, 1, 8, 16, 1, 9, 9, 1, 9, 10, 1, 9, 11, 1, 9, 12, 1, 9, 13, 1, 9, 14, 1, 9, 15, 1, 9, 16, 1, 131071, 8, 3, 131070, 8, 3, 65540, 8, 3, 65541, 8, 3, 65542, 8, 3, 65543, 8, 3, 131069, 8, 3, 65544, 8, 5, 65545, 8, 4, 65547, 8, 7, 65546, 8, 5, 65547, 12, 1441801, 65547, 11, 1441798, 65547, 14, 1441798, 65547, 10, 1441795, 65547, 9, 1441795, 65547, 16, 1441795, 65547, 15, 1441795, 65547, 17, 655368, 65546, 17, 655364, 65545, 17, 655365, 65544, 17, 655364, 65538, 17, 655369, 65536, 17, 655366, 65539, 17, 655366, 131064, 17, 655367, 131064, 8, 8, 131064, 13, 1048585, 131064, 11, 1048582, 131064, 14, 1048582, 131064, 16, 1048579, 131064, 15, 1048579, 131064, 9, 1048579, 131064, 10, 1048579, 65539, 10, 2, 65539, 12, 2, 65539, 14, 2, 65539, 16, 2, 65536, 10, 2, 65536, 12, 2, 65536, 14, 2, 65536, 16, 2, 131068, 8, 3, 131067, 8, 3, 131066, 8, 3, 131065, 8, 4, 131065, 17, 655365, 131071, 17, 655363, 131070, 17, 655363, 131068, 17, 655363, 131069, 17, 655363, 131067, 17, 655363, 131066, 17, 655363, 65540, 17, 655363, 65541, 17, 655363, 65542, 17, 655363, 65543, 17, 655363, 8, 14, 1, 8, 15, 1, 7, 15, 1, 7, 16, 1, 6, 16, 1, 6, 17, 1, 5, 17, 1)
+"cells": PackedInt32Array(0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 3, 1, 1, 3, 2, 1, 3, 3, 1, 3, 4, 1, 2, 4, 1, 1, 4, 1, 1, 3, 1, 2, 3, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 0, 5, 1, 1, 5, 1, 2, 5, 1, 3, 5, 1, 3, 6, 1, 2, 6, 1, 1, 6, 1, 0, 6, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 65537, 8, 9, 65539, 0, 1441800, 65536, 0, 1048583, 65537, 0, 3, 65538, 0, 3, 65539, 1, 1441796, 65536, 1, 1048581, 65539, 2, 1441795, 65536, 2, 1048579, 65536, 3, 1048579, 65539, 3, 1441795, 65539, 4, 1441795, 65536, 4, 1048579, 65539, 8, 6, 65536, 8, 6, 65539, 5, 1441795, 65539, 6, 1441795, 65539, 7, 1441795, 65536, 5, 1048579, 65536, 6, 1048579, 65536, 7, 1048579, 3, 8, 1, 2, 8, 1, 1, 8, 1, 0, 8, 1, 65535, 8, 1, 4, 8, 1, 5, 8, 1, 65534, 8, 1, 6, 8, 1, 65533, 8, 1, 7, 8, 1, 8, 8, 1, 9, 8, 1, 10, 8, 1, 11, 8, 1, 65532, 8, 1, 65531, 8, 1, 65530, 8, 1, 65529, 8, 1, 65528, 8, 1, 65528, 9, 1, 65528, 10, 1, 65528, 11, 1, 65528, 12, 1, 65528, 13, 1, 65528, 14, 1, 65528, 15, 1, 65528, 16, 1, 65528, 17, 1, 65529, 17, 1, 65530, 17, 1, 65531, 17, 1, 65532, 17, 1, 65533, 17, 1, 65534, 17, 1, 65535, 17, 1, 0, 17, 1, 4, 17, 1, 7, 17, 1, 8, 17, 1, 9, 17, 1, 10, 17, 1, 10, 16, 1, 10, 15, 1, 10, 14, 1, 10, 13, 1, 10, 12, 1, 10, 11, 1, 10, 10, 1, 10, 9, 1, 11, 9, 1, 11, 10, 1, 11, 11, 1, 11, 12, 1, 11, 13, 1, 11, 15, 1, 11, 14, 1, 11, 17, 1, 11, 16, 1, 65529, 9, 1, 65529, 10, 1, 65529, 11, 1, 65529, 12, 1, 65529, 13, 1, 65529, 14, 1, 65529, 15, 1, 65529, 16, 1, 65530, 9, 1, 65530, 10, 1, 65530, 11, 1, 65530, 12, 1, 65530, 13, 1, 65530, 14, 1, 65530, 15, 1, 65530, 16, 1, 65531, 9, 1, 65531, 10, 1, 65531, 11, 1, 65531, 12, 1, 65531, 13, 1, 65531, 14, 1, 65531, 15, 1, 65531, 16, 1, 65532, 9, 1, 65532, 10, 1, 65532, 11, 1, 65532, 12, 1, 65532, 13, 1, 65532, 14, 1, 65532, 15, 1, 65532, 16, 1, 65533, 9, 1, 65533, 10, 1, 65533, 11, 1, 65533, 12, 1, 65533, 13, 1, 65533, 14, 1, 65533, 15, 1, 65533, 16, 1, 65534, 9, 1, 65534, 10, 1, 65534, 11, 1, 65534, 12, 1, 65534, 13, 1, 65534, 14, 1, 65534, 15, 1, 65534, 16, 1, 65535, 9, 1, 65535, 10, 1, 65535, 11, 1, 65535, 12, 1, 65535, 13, 1, 65535, 14, 1, 65535, 15, 1, 65535, 16, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 1, 9, 1, 1, 10, 1, 1, 11, 1, 1, 12, 1, 1, 13, 1, 1, 14, 1, 1, 15, 1, 2, 9, 1, 2, 10, 1, 2, 11, 1, 2, 12, 1, 2, 13, 1, 2, 14, 1, 2, 15, 1, 2, 16, 1, 3, 9, 1, 3, 10, 1, 3, 11, 1, 3, 12, 1, 3, 13, 1, 3, 14, 1, 3, 15, 1, 4, 9, 1, 4, 10, 1, 4, 11, 1, 4, 12, 1, 4, 13, 1, 4, 14, 1, 4, 15, 1, 5, 9, 1, 5, 10, 1, 5, 11, 1, 5, 12, 1, 5, 13, 1, 5, 14, 1, 6, 9, 1, 6, 10, 1, 6, 11, 1, 6, 12, 1, 6, 13, 1, 6, 14, 1, 6, 15, 1, 7, 9, 1, 7, 10, 1, 7, 11, 1, 7, 12, 1, 7, 13, 1, 7, 14, 1, 8, 9, 1, 8, 10, 1, 8, 11, 1, 8, 12, 1, 8, 13, 1, 8, 16, 1, 9, 9, 1, 9, 10, 1, 9, 11, 1, 9, 12, 1, 9, 13, 1, 9, 14, 1, 9, 15, 1, 9, 16, 1, 131071, 8, 3, 131070, 8, 3, 65540, 8, 3, 65541, 8, 3, 65542, 8, 3, 65543, 8, 3, 131069, 8, 3, 65544, 8, 5, 65545, 8, 4, 65547, 8, 7, 65546, 8, 5, 65547, 12, 1441801, 65547, 11, 1441798, 65547, 14, 1441798, 65547, 10, 1441795, 65547, 9, 1441795, 65547, 16, 1441795, 65547, 15, 1441795, 65547, 17, 655368, 65546, 17, 655364, 65545, 17, 655365, 65544, 17, 655364, 65538, 17, 655369, 65536, 17, 655366, 65539, 17, 655366, 131064, 17, 655367, 131064, 8, 8, 131064, 13, 1048585, 131064, 11, 1048582, 131064, 14, 1048582, 131064, 16, 1048579, 131064, 15, 1048579, 131064, 9, 1048579, 131064, 10, 1048579, 65539, 10, 2, 65539, 12, 2, 65539, 14, 2, 65539, 16, 2, 65536, 10, 2, 65536, 12, 2, 65536, 14, 2, 65536, 16, 2, 131068, 8, 3, 131067, 8, 3, 131066, 8, 3, 131065, 8, 4, 131065, 17, 655365, 131071, 17, 655363, 131070, 17, 655363, 131068, 17, 655363, 131069, 17, 655363, 131067, 17, 655363, 131066, 17, 655363, 65540, 17, 655363, 65541, 17, 655363, 65542, 17, 655363, 65543, 17, 655363, 8, 14, 1, 8, 15, 1, 7, 15, 1, 7, 16, 1, 6, 16, 1, 6, 17, 1, 5, 17, 1, 3, 16, 1, 5, 15, 1, 5, 16, 1, 4, 16, 1, 3, 17, 1, 2, 17, 1, 1, 17, 1, 1, 16, 1, 0, 16, 1)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
-[node name="GridMap2" type="GridMap" parent="."]
-mesh_library = ExtResource("2_0q5tf")
-cell_size = Vector3(3, 1, 3)
-data = {
-"cells": PackedInt32Array(65538, 0, 8, 65537, 0, 8)
-}
-metadata/_editor_floor_ = Vector3(0, 1, 0)
+[node name="Prop_Tank2" parent="." instance=ExtResource("2_g7gje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.5, 1)
+
+[node name="Prop_Shelf4" parent="." instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1.5, 54.5)
+
+[node name="Prop_Shelf3" parent="Prop_Shelf4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Prop_Shelf4" parent="Prop_Shelf4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Prop_Shelf5" parent="Prop_Shelf4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Prop_Shelf6" parent="Prop_Shelf4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Prop_Shelf7" parent="Prop_Shelf4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="ShelvingRow1" parent="." instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.5, 51.5)
+
+[node name="Prop_Shelf3" parent="ShelvingRow1" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Prop_Shelf4" parent="ShelvingRow1" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Prop_Shelf5" parent="ShelvingRow1" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Prop_Shelf6" parent="ShelvingRow1" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Prop_Shelf7" parent="ShelvingRow1" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="ShelvingRow2" parent="." instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.5, 45.5)
+
+[node name="Prop_Shelf3" parent="ShelvingRow2" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Prop_Shelf4" parent="ShelvingRow2" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Prop_Shelf5" parent="ShelvingRow2" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Prop_Shelf6" parent="ShelvingRow2" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Prop_Shelf7" parent="ShelvingRow2" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="ShelvingRow3" parent="." instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.5, 34.5)
+
+[node name="Prop_Shelf3" parent="ShelvingRow3" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Prop_Shelf4" parent="ShelvingRow3" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Prop_Shelf5" parent="ShelvingRow3" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Prop_Shelf6" parent="ShelvingRow3" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Prop_Shelf7" parent="ShelvingRow3" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="ShelvingRow4" parent="." instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1.5, 28.5)
+
+[node name="Prop_Shelf3" parent="ShelvingRow4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Prop_Shelf4" parent="ShelvingRow4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Prop_Shelf5" parent="ShelvingRow4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Prop_Shelf6" parent="ShelvingRow4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Prop_Shelf7" parent="ShelvingRow4" instance=ExtResource("3_rsnr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Prop_CountertopSink2" parent="." instance=ExtResource("4_4hu04")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 28.1, 1.5, 30)
+
+[node name="Prop_Countertop2" parent="." instance=ExtResource("5_6novo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 26.3, 1.5, 30)
+
+[node name="Prop_Countertop3" parent="." instance=ExtResource("5_6novo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 29.9, 1.5, 30)
+
+[node name="Prop_Countertop4" parent="." instance=ExtResource("5_6novo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.7, 1.5, 30)
+
+[node name="Prop_Countertop5" parent="." instance=ExtResource("5_6novo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 33.4, 1.5, 30)
+
+[node name="Prop_Countertop6" parent="." instance=ExtResource("5_6novo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 35.2, 1.5, 30)
+
+[node name="Node3D" parent="." instance=ExtResource("6_r56tm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.6, 1.5, 30)
+
+[node name="Node3D2" parent="." instance=ExtResource("6_r56tm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2, 1.5, 30)
+
+[node name="Node3D3" parent="." instance=ExtResource("6_r56tm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.7, 1.5, 30)
+
+[node name="Node3D4" parent="." instance=ExtResource("6_r56tm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8, 1.5, 30)
+
+[node name="Node3D5" parent="." instance=ExtResource("6_r56tm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.4, 1.5, 30)

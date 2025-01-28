@@ -48,13 +48,16 @@ shadow_mesh = SubResource("ArrayMesh_gqnna")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jlqyq"]
 points = PackedVector3Array(0.6, 1.10079, 0.349995, 0.108418, 0.859406, 0.385318, 0.6, 0, 0.349995, 0.6, 1.10079, -0.45, -0.6, 1.10079, 0.349995, 0.108418, 0.812853, 0.385318, -0.108536, 0.859406, 0.385318, 0.6, 0, -0.45, -0.6, 0, 0.349995, -0.6, 1.10079, -0.45, -0.108536, 0.812853, 0.385318, -0.6, 0, -0.45)
 
-[node name="Prop_Cart2" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 
-[node name="Prop_Cart" type="MeshInstance3D" parent="."]
+[node name="Prop_Cart2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Prop_Cart" type="MeshInstance3D" parent="Prop_Cart2"]
 mesh = SubResource("ArrayMesh_b8o2y")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Cart"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Prop_Cart2/Prop_Cart"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Cart/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prop_Cart2/Prop_Cart/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_jlqyq")

@@ -1,15 +1,15 @@
-[gd_scene load_steps=7 format=4 uid="uid://iovojo7an2ba"]
+[gd_scene load_steps=7 format=4 uid="uid://btn0ejqg64stb"]
 
-[ext_resource type="Texture2D" uid="uid://5ic7q7sp1esw" path="res://Materials/OurTextures/PropMaterials/Prop_Tank_T_Tank_BaseColour.png" id="1_h2cbh"]
-[ext_resource type="Texture2D" uid="uid://oo1i72ub4g43" path="res://Materials/OurTextures/PropMaterials/Prop_Tank_T_Tank_Roughness.png" id="2_nxerh"]
+[ext_resource type="Texture2D" uid="uid://5ic7q7sp1esw" path="res://Materials/OurTextures/PropMaterials/Prop_Tank_T_Tank_BaseColour.png" id="1_eox7x"]
+[ext_resource type="Texture2D" uid="uid://oo1i72ub4g43" path="res://Materials/OurTextures/PropMaterials/Prop_Tank_T_Tank_Roughness.png" id="2_drikl"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4w3rm"]
 resource_name = "Tank"
 cull_mode = 2
-albedo_texture = ExtResource("1_h2cbh")
-metallic_texture = ExtResource("2_nxerh")
+albedo_texture = ExtResource("1_eox7x")
+metallic_texture = ExtResource("2_drikl")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("2_nxerh")
+roughness_texture = ExtResource("2_drikl")
 roughness_texture_channel = 1
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6c46f"]
@@ -50,7 +50,6 @@ shadow_mesh = SubResource("ArrayMesh_6c46f")
 points = PackedVector3Array(-1.02565, 0.649764, -0.0409608, -0.975255, 0.678987, -0.177064, -0.682498, -1.19209e-07, -0.232914, -0.682498, -1.19209e-07, 0.0786006, -0.722456, 0.20963, 0.616627, -0.863614, 0.44908, 0.447603, -0.984492, 0.651851, 0.222893, -1.02565, 0.849852, -0.0409608, -0.780485, 0.689424, -0.405869, -0.547364, -1.19209e-07, -0.513474, -0.975255, 0.820629, -0.177064, -0.386528, -1.19209e-07, 0.722922, -0.386528, 0.0998948, 0.896204, -0.693542, 0.33338, 0.738973, -0.872047, 0.618454, 0.514918, -0.984492, 0.847765, 0.222893, -0.682498, 2.99983, 0.0786006, -0.682498, 2.99983, -0.232914, -0.780485, 0.81049, -0.405869, -0.303801, -1.19209e-07, -0.707721, -0.547364, 2.99983, -0.513474, 0.391146, -1.19209e-07, 0.722922, 0.391146, 0.0998948, 0.896204, -0.386528, 0.299685, 0.896204, -0.303801, 2.99983, 0.553571, -0.547364, 2.99983, 0.359324, -0.391749, 3.04635, 0.235177, -0.48833, 3.04635, 0.0343793, -0.48833, 3.04635, -0.188529, -0.391749, 3.04635, -0.389327, -0.303801, 2.99983, -0.707721, -0.000200748, -1.19209e-07, -0.777001, -0.21746, 3.04635, -0.528378, 0.682297, -1.19209e-07, 0.0786006, 0.725468, 0.20963, 0.616463, 0.696553, 0.33338, 0.738809, 0.391146, 0.299685, 0.896204, -0.000200748, 2.99983, 0.622851, -0.000200748, 3.04635, 0.423691, -0.21746, 3.04635, 0.374065, -0.000200748, 2.99983, -0.777001, 0.3036, -1.19209e-07, -0.707721, -0.000200748, 3.04635, -0.577841, 0.682297, -1.19209e-07, -0.232914, 1.02565, 0.649764, -0.0409608, 0.864819, 0.44908, 0.447439, 0.873252, 0.618454, 0.514754, 0.547163, 2.99983, 0.359324, 0.3036, 2.99983, 0.553571, 0.217259, 3.04635, 0.374065, 0.217259, 3.04635, -0.528378, 0.3036, 2.99983, -0.707721, 0.780285, 0.689424, -0.405869, 0.547163, -1.19209e-07, -0.513474, 0.975054, 0.678987, -0.177064, 0.983688, 0.652448, 0.222893, 1.02565, 0.849852, -0.0409608, 0.983688, 0.847467, 0.222893, 0.682297, 2.99983, 0.0786006, 0.48813, 3.04635, 0.0343793, 0.391347, 3.04635, 0.235177, 0.391347, 3.04635, -0.389327, 0.547163, 2.99983, -0.513474, 0.780285, 0.81049, -0.405869, 0.975054, 0.820629, -0.177064, 0.682297, 2.99983, -0.232914, 0.48813, 3.04635, -0.188529)
 
 [node name="Prop_Tank2" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
 
 [node name="Prop_Tank" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_sl0xg")
