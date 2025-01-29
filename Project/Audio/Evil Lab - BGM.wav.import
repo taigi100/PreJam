@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c2mssrar1k6g"
-path="res://.godot/imported/Evil Lab - BGM.wav-a532b5ca024a7398b485a9d8b56aaaa2.sample"
+path="res://.godot/imported/Evil Lab - BGM.wav-4bb04c579fbb7d1c89d305df49e81e98.sample"
 
 [deps]
 
-source_file="res://Evil Lab - BGM.wav"
-dest_files=["res://.godot/imported/Evil Lab - BGM.wav-a532b5ca024a7398b485a9d8b56aaaa2.sample"]
+source_file="res://Audio/Evil Lab - BGM.wav"
+dest_files=["res://.godot/imported/Evil Lab - BGM.wav-4bb04c579fbb7d1c89d305df49e81e98.sample"]
 
 [params]
 

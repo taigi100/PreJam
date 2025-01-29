@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://4rsab58p3nx5"]
+[gd_scene load_steps=13 format=3 uid="uid://4rsab58p3nx5"]
 
 [ext_resource type="PackedScene" uid="uid://b2xqifo5birbu" path="res://player/player.tscn" id="1_q174u"]
+[ext_resource type="AudioStream" uid="uid://d1e5e6v2xob42" path="res://Audio/Fire SFX.mp3" id="2_vogjp"]
+[ext_resource type="AudioStream" uid="uid://clsrem4cp8n5w" path="res://Audio/Damage SFX.mp3" id="3_05she"]
 [ext_resource type="PackedScene" uid="uid://cxk1gi2kvw4d2" path="res://enemies/ranged_enemy/ranged_mouse.tscn" id="3_mlaix"]
 [ext_resource type="PackedScene" uid="uid://b8cr4x7boog4u" path="res://enemies/melee_enemy/mouse.tscn" id="3_mmsdq"]
-[ext_resource type="AudioStream" uid="uid://c2mssrar1k6g" path="res://Evil Lab - BGM.wav" id="4_xxf57"]
+[ext_resource type="AudioStream" uid="uid://c2mssrar1k6g" path="res://Audio/Evil Lab - BGM.wav" id="4_xxf57"]
+[ext_resource type="AudioStream" uid="uid://brmghn4bp4c5c" path="res://Audio/Alarm.wav" id="5_ibxe6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p4edb"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,6 +40,14 @@ environment = SubResource("Environment_nw7wt")
 
 [node name="Player" parent="." instance=ExtResource("1_q174u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10616, -0.378699)
+
+[node name="AttackSFX" type="AudioStreamPlayer3D" parent="Player"]
+stream = ExtResource("2_vogjp")
+volume_db = -7.689
+
+[node name="playerDamage" type="AudioStreamPlayer3D" parent="Player"]
+stream = ExtResource("3_05she")
+volume_db = -6.095
 
 [node name="mouse-mixamo" parent="." instance=ExtResource("3_mmsdq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.89593, -0.255363, -4.72816)
@@ -85,6 +96,12 @@ material = SubResource("StandardMaterial3D_4cny8")
 transform = Transform3D(-0.603403, 0, -0.797437, 0, 1, 0, 0.797437, 0, -0.603403, 0, 0, -10.8472)
 player_path = NodePath("../Player")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_xxf57")
+autoplay = true
+
+[node name="Alarm" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.998544, 0.0539394, 0, -0.0539394, 0.998544, 12.1258, 2.75119, -2.19617)
+stream = ExtResource("5_ibxe6")
+volume_db = -8.0
 autoplay = true

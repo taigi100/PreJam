@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1e5e6v2xob42"
+path="res://.godot/imported/Fire SFX.mp3-9e111d2c14d1c748b4e67d2fd01e180b.mp3str"
+
+[deps]
+
+source_file="res://Audio/Fire SFX.mp3"
+dest_files=["res://.godot/imported/Fire SFX.mp3-9e111d2c14d1c748b4e67d2fd01e180b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
