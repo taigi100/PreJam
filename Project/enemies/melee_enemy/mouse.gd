@@ -12,6 +12,7 @@ var player = null
 @onready var vision_area: Area3D = $VisionArea
 @onready var vision_raycast: RayCast3D = $vision_raycast
 
+
 	
 const SPEED = 4.0
 const ATTACK_RANGE = 1.5

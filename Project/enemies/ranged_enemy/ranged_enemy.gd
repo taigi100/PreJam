@@ -10,6 +10,7 @@ extends CharacterBody3D
 @onready var vision_area: Area3D = $VisionArea
 @onready var vision_raycast: RayCast3D = $vision_raycast
 
+
 var player = null
 
 @export var player_path: NodePath
