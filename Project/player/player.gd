@@ -65,7 +65,7 @@ func shoot():
 	var instance = bullet.instantiate()
 	instance.position = gun_barrel.global_position
 	instance.transform.basis = gun_barrel.global_transform.basis
-	instance.scale = Vector3(1,1,1)
+	instance.scale = Vector3(0.75,0.75,0.75)
 	get_parent().add_child(instance)
 	can_shoot = false
 	await get_tree().create_timer(0.5).timeout  # Cooldown

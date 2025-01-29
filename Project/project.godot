@@ -23,6 +23,7 @@ Attack="*res://enemies/ranged_enemy/Attack.gd"
 
 enemy=""
 player=""
+Vaultable="The player is able to dash over this object"
 
 [input]
 
