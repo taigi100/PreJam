@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c2mssrar1k6g"
+path="res://.godot/imported/Evil Lab - BGM.wav-a532b5ca024a7398b485a9d8b56aaaa2.sample"
+
+[deps]
+
+source_file="res://Evil Lab - BGM.wav"
+dest_files=["res://.godot/imported/Evil Lab - BGM.wav-a532b5ca024a7398b485a9d8b56aaaa2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=12
+edit/loop_end=-1
+compress/mode=0
