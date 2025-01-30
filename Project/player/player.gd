@@ -7,6 +7,9 @@ extends CharacterBody3D
 @onready var camera: Camera3D = $Camera3D
 @onready var rig: Node3D = $Rig
 @onready var gun_barrel: Marker3D = $Rig/Gun_Barrel
+#SFX
+@onready var AttackSFX = $AttackSFX
+@onready var playerDamage = $playerDamage
 
 var bullet = load("res://enemies/common/bullet.tscn")
 var can_shoot = true
@@ -67,9 +70,12 @@ func shoot():
 	instance.transform.basis = gun_barrel.global_transform.basis
 	instance.scale = Vector3(0.75,0.75,0.75)
 	get_parent().add_child(instance)
+	AttackSFX.play()
 	can_shoot = false
 	await get_tree().create_timer(0.5).timeout  # Cooldown
 	can_shoot = true
+	
 
 func take_damage(damage):
 	print("Player hit with %d damage" % damage)
+	playerDamage.play()
