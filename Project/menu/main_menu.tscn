@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccbdsn7spoaj7"]
+[gd_scene load_steps=3 format=3 uid="uid://ccbdsn7spoaj7"]
 
 [ext_resource type="Script" path="res://menu/main_menu.gd" id="1_0lp6v"]
+[ext_resource type="AudioStream" uid="uid://67xkg2vxn11v" path="res://Audio/Evil Lab - Main Menu - MP3.mp3" id="2_n1g4f"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -56,6 +57,10 @@ test - tester
 test - tester
 test - tester"
 fit_content = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_n1g4f")
+volume_db = -9.369
 
 [connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
