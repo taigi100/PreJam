@@ -61,6 +61,7 @@ fit_content = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_n1g4f")
 volume_db = -9.369
+autoplay = true
 
 [connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="AspectRatioContainer/HSplitContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
