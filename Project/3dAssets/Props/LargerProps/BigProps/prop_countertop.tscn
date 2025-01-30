@@ -50,7 +50,7 @@ shadow_mesh = SubResource("ArrayMesh_mhuoc")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_siul1"]
 points = PackedVector3Array(0.41, 1.2, -0.65, 0.41, 0, -0.65, 0.41, 1.2, -1.45, -1.41, 1.2, -0.65, 0.41, 0, -1.45, -1.41, 0, -0.65, -1.41, 1.2, -1.45, -1.41, 0, -1.45)
 
-[node name="Prop_Countertop2" type="Node3D"]
+[node name="Prop_Countertop2" type="Node3D" groups=["Vaultable"]]
 
 [node name="Prop_Countertop" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, 0, 0, 0)

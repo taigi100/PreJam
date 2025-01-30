@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cx50gytfpsy7b"]
 
-[ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://CorrectMeshLibraries/RoomTiles.tres" id="1_n3css"]
+[ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://addons/CorrectMeshLibraries/RoomTiles.tres" id="1_n3css"]
 
 [node name="Node3D" type="Node3D"]
 

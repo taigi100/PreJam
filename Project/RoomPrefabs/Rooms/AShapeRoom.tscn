@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://qopdjw0k73l4"]
+[gd_scene load_steps=12 format=3 uid="uid://qopdjw0k73l4"]
 
-[ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://CorrectMeshLibraries/RoomTiles.tres" id="1_686it"]
+[ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://addons/CorrectMeshLibraries/RoomTiles.tres" id="1_686it"]
+[ext_resource type="PackedScene" uid="uid://cnva0gppoqvdu" path="res://3dAssets/Props/LargerProps/BigProps/table.tscn" id="2_cxr7h"]
+[ext_resource type="PackedScene" uid="uid://mucjfejgbwrq" path="res://3dAssets/Props/LargerProps/BigProps/bench_2.tscn" id="3_jr5os"]
+[ext_resource type="PackedScene" uid="uid://c5u32ftol02r4" path="res://3dAssets/Props/LargerProps/BigProps/prop_countertop.tscn" id="4_bn3qg"]
+[ext_resource type="PackedScene" uid="uid://6sw3rfvgjy2o" path="res://3dAssets/Props/LargerProps/BigProps/prop_countertop_sink_2.tscn" id="5_1f358"]
+[ext_resource type="PackedScene" uid="uid://dkq6h2x5hxrn7" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_plate.tscn" id="6_w5t5k"]
+[ext_resource type="PackedScene" uid="uid://b812oyrink813" path="res://3dAssets/Props/LargerProps/BigProps/prop_shelf_2.tscn" id="7_lolav"]
+[ext_resource type="PackedScene" uid="uid://n6rghs573n4h" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_hanger.tscn" id="8_dj8dm"]
+[ext_resource type="PackedScene" uid="uid://bt8fd5sruhf14" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_coat.tscn" id="9_cpin4"]
+[ext_resource type="PackedScene" uid="uid://dvmxf7u23jjc1" path="res://3dAssets/Props/LargerProps/BigProps/prop_shelf_1.tscn" id="10_ph8ns"]
+[ext_resource type="PackedScene" uid="uid://bxckbh6adk01p" path="res://3dAssets/Props/LargerProps/BigProps/prop_cart_wheels_2.tscn" id="11_2jm5e"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -8,6 +18,188 @@
 mesh_library = ExtResource("1_686it")
 cell_size = Vector3(3, 1, 3)
 data = {
-"cells": PackedInt32Array(65532, 0, 1, 65533, 0, 1, 65534, 0, 1, 65535, 0, 1, 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1, 65532, 1, 1, 65532, 2, 1, 65532, 3, 1, 65532, 5, 1, 65532, 6, 1, 65532, 7, 1, 65532, 8, 1, 65532, 9, 1, 7, 1, 1, 7, 2, 1, 7, 3, 1, 7, 4, 1, 6, 4, 1, 7, 5, 1, 7, 7, 1, 7, 8, 1, 7, 6, 1, 6, 8, 1, 5, 8, 1, 5, 7, 1, 5, 6, 1, 4, 6, 1, 65533, 9, 1, 65534, 9, 1, 65534, 8, 1, 65534, 7, 1, 65535, 7, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 4, 7, 1, 5, 9, 1, 6, 9, 1, 7, 9, 1, 6, 7, 1, 6, 6, 1, 6, 5, 1, 6, 3, 1, 6, 2, 1, 6, 1, 1, 5, 2, 1, 5, 3, 1, 5, 4, 1, 5, 5, 1, 5, 1, 1, 4, 1, 1, 3, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 65535, 1, 1, 65534, 1, 1, 65534, 2, 1, 65533, 2, 1, 65533, 1, 1, 65533, 3, 1, 65533, 5, 1, 65533, 6, 1, 65533, 7, 1, 65533, 8, 1, 65534, 3, 1, 65534, 5, 1, 65534, 6, 1, 65535, 5, 1, 65535, 3, 1, 65535, 2, 1, 65535, 6, 1, 0, 6, 1, 0, 5, 1, 1, 6, 1, 2, 6, 1, 3, 6, 1, 3, 5, 1, 4, 5, 1, 4, 4, 1, 3, 4, 1, 2, 5, 1, 1, 5, 1, 1, 4, 1, 0, 3, 1, 0, 2, 1, 1, 3, 1, 2, 3, 1, 3, 3, 1, 2, 4, 1, 4, 2, 1, 4, 3, 1, 3, 2, 1, 65538, 7, 655369, 65537, 0, 9, 131068, 4, 3, 131068, 5, 1048583, 131069, 5, 3, 131070, 5, 3, 131071, 5, 3, 131069, 4, 3, 131070, 4, 3, 131071, 4, 3, 65536, 4, 3, 65536, 5, 3, 65537, 4, 1048579, 131068, 3, 1048579, 131068, 2, 1048581, 131068, 1, 1048580, 131068, 0, 8, 131069, 0, 10, 131070, 0, 4, 65536, 0, 6, 65539, 0, 6, 131071, 0, 3, 65543, 0, 1441800, 65542, 0, 10, 65541, 0, 5, 65540, 0, 3, 131068, 9, 1048584, 131070, 9, 655368, 131069, 9, 655364, 131068, 8, 1048586, 131068, 7, 1048580, 131068, 6, 1048581, 65536, 7, 655366, 65539, 7, 655366, 131070, 8, 1441796, 131071, 7, 655365, 65541, 8, 1048586, 65540, 7, 655364, 65541, 9, 1048584, 65543, 9, 655368, 65542, 9, 655364, 65543, 8, 1441795, 65543, 7, 1441795, 65543, 6, 1441796, 65543, 5, 1441802, 65543, 4, 1441797, 65543, 1, 1441797, 65543, 2, 1441797, 65543, 3, 1441796)
+"cells": PackedInt32Array(65532, 0, 1, 65533, 0, 1, 65534, 0, 1, 65535, 0, 1, 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1, 65532, 1, 1, 65532, 2, 1, 65532, 3, 1, 65532, 5, 1, 65532, 6, 1, 65532, 7, 1, 65532, 8, 1, 65532, 9, 1, 7, 1, 1, 7, 2, 1, 7, 3, 1, 7, 4, 1, 6, 4, 1, 7, 5, 1, 7, 7, 1, 7, 8, 1, 7, 6, 1, 6, 8, 1, 5, 8, 1, 5, 7, 1, 5, 6, 1, 4, 6, 1, 65533, 9, 1, 65534, 9, 1, 65534, 8, 1, 65534, 7, 1, 65535, 7, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 4, 7, 1, 5, 9, 1, 6, 9, 1, 7, 9, 1, 6, 7, 1, 6, 6, 1, 6, 5, 1, 6, 3, 1, 6, 2, 1, 6, 1, 1, 5, 2, 1, 5, 3, 1, 5, 4, 1, 5, 5, 1, 5, 1, 1, 4, 1, 1, 3, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 65535, 1, 1, 65534, 1, 1, 65534, 2, 1, 65533, 2, 1, 65533, 1, 1, 65533, 3, 1, 65533, 5, 1, 65533, 6, 1, 65533, 7, 1, 65533, 8, 1, 65534, 3, 1, 65534, 5, 1, 65534, 6, 1, 65535, 5, 1, 65535, 3, 1, 65535, 2, 1, 65535, 6, 1, 0, 6, 1, 0, 5, 1, 1, 6, 1, 2, 6, 1, 3, 6, 1, 3, 5, 1, 4, 5, 1, 4, 4, 1, 3, 4, 1, 2, 5, 1, 1, 5, 1, 1, 4, 1, 0, 3, 1, 0, 2, 1, 1, 3, 1, 2, 3, 1, 3, 3, 1, 2, 4, 1, 4, 2, 1, 4, 3, 1, 3, 2, 1, 65538, 7, 655369, 131068, 4, 3, 131068, 5, 1048583, 131069, 5, 3, 131070, 5, 3, 131071, 5, 3, 131069, 4, 3, 131070, 4, 3, 131071, 4, 3, 65536, 4, 3, 65536, 5, 3, 65537, 4, 1048579, 131068, 3, 1048579, 131068, 2, 1048581, 131068, 1, 1048580, 131068, 0, 8, 131069, 0, 10, 131070, 0, 4, 65536, 0, 6, 65539, 0, 6, 131071, 0, 3, 65543, 0, 1441800, 65542, 0, 10, 65541, 0, 5, 65540, 0, 3, 131068, 9, 1048584, 131070, 9, 655368, 131069, 9, 655364, 131068, 8, 1048586, 131068, 7, 1048580, 131068, 6, 1048581, 65536, 7, 655366, 65539, 7, 655366, 131070, 8, 1441796, 131071, 7, 655365, 65541, 8, 1048586, 65540, 7, 655364, 65541, 9, 1048584, 65543, 9, 655368, 65542, 9, 655364, 65543, 8, 1441795, 65543, 7, 1441795, 65543, 6, 1441796, 65543, 5, 1441802, 65543, 4, 1441797, 65543, 1, 1441797, 65543, 2, 1441797, 65543, 3, 1441796, 65537, 0, 9)
 }
 metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Table2" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3, 1.5, 6)
+
+[node name="Table3" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.5, 6)
+
+[node name="Table4" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 6)
+
+[node name="Table5" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 6)
+
+[node name="Table6" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 1.5, 6)
+
+[node name="Table7" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3, 1.5, 14.2)
+
+[node name="Table8" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.5, 14.2)
+
+[node name="Table9" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 14.2)
+
+[node name="Table10" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 14.2)
+
+[node name="Table11" parent="." instance=ExtResource("2_cxr7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 1.5, 14.2)
+
+[node name="Bench2" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4, 1.5, 6.2)
+
+[node name="Bench3" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 6.2)
+
+[node name="Bench4" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 6.2)
+
+[node name="Bench5" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4, 1.5, 6.2)
+
+[node name="Bench6" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, 1.5, 6.2)
+
+[node name="Bench7" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4, 1.5, 4)
+
+[node name="Bench8" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 4)
+
+[node name="Bench9" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 4)
+
+[node name="Bench10" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4, 1.5, 4)
+
+[node name="Bench11" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, 1.5, 4)
+
+[node name="Bench12" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4, 1.5, 14.4)
+
+[node name="Bench13" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 14.4)
+
+[node name="Bench14" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 14.4)
+
+[node name="Bench15" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4, 1.5, 14.4)
+
+[node name="Bench16" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, 1.5, 14.4)
+
+[node name="Bench17" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4, 1.5, 12.2)
+
+[node name="Bench18" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4, 1.5, 12.2)
+
+[node name="Bench19" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 1.5, 12.2)
+
+[node name="Bench20" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4, 1.5, 12.2)
+
+[node name="Bench21" parent="." instance=ExtResource("3_jr5os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4, 1.5, 12.2)
+
+[node name="Prop_Countertop2" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 1.4)
+
+[node name="Prop_Countertop3" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 3.2)
+
+[node name="Prop_Countertop5" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 8.6)
+
+[node name="Prop_Countertop6" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 10.4)
+
+[node name="Prop_Countertop4" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 6.8)
+
+[node name="Prop_CountertopSink2" parent="." instance=ExtResource("5_1f358")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.6, 1.5, 5)
+
+[node name="Prop_Small_Plate" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 0.642788, -0.766044, 0, 0.766044, 0.642788, 23.7, 2.48603, 4.8658)
+
+[node name="Prop_Small_Plate2" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 0.906308, -0.422618, 0, 0.422618, 0.906308, 23.7, 2.47371, 5.00668)
+
+[node name="Prop_Small_Plate3" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7, 2.57, 4.2)
+
+[node name="Prop_Small_Plate5" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9, 2.57, 4.7)
+
+[node name="Prop_Small_Plate6" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8, 2.57, 5.5)
+
+[node name="Prop_Small_Plate7" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 2.57, 5.5)
+
+[node name="Prop_Small_Plate4" parent="." instance=ExtResource("6_w5t5k")]
+transform = Transform3D(0.991888, -0.0141333, 0.126327, -0.0148911, 0.974038, 0.225895, -0.12624, -0.225944, 0.965926, 23.6986, 2.60259, 3.97759)
+
+[node name="Light" type="Node3D" parent="."]
+
+[node name="Prop_Shelf2" parent="." instance=ExtResource("7_lolav")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 1.5, 1.8)
+
+[node name="Prop_Shelf3" parent="." instance=ExtResource("7_lolav")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9, 1.5, 1.8)
+
+[node name="Prop_Small_Hanger" parent="." instance=ExtResource("8_dj8dm")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 3.3, 12)
+
+[node name="Prop_Small_Hanger2" parent="." instance=ExtResource("8_dj8dm")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 3.3, 12.6)
+
+[node name="Prop_Small_Coat" parent="." instance=ExtResource("9_cpin4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 3.3, 11.75)
+
+[node name="Prop_Small_Coat2" parent="." instance=ExtResource("9_cpin4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 3.3, 12.58)
+
+[node name="Prop_Shelf1" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.6, 14.9)
+
+[node name="Prop_Shelf4" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.6, 14.9)
+
+[node name="Prop_Shelf5" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.6, 14.9)
+
+[node name="Prop_Shelf6" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.6, 14.9)
+
+[node name="Prop_Shelf8" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1.6, 14.9)
+
+[node name="Prop_Shelf9" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1.6, 14.9)
+
+[node name="Prop_Shelf7" parent="." instance=ExtResource("10_ph8ns")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1.6, 14.9)
+
+[node name="Node3D" parent="." instance=ExtResource("11_2jm5e")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 1.55, 22.6)
+
+[node name="Prop_Countertop7" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.6, 1.6, 25.9)
+
+[node name="Prop_Countertop8" parent="." instance=ExtResource("4_bn3qg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.6, 1.6, 29.5)
+
+[node name="Prop_CountertopSink3" parent="." instance=ExtResource("5_1f358")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.6, 1.6, 27.7)

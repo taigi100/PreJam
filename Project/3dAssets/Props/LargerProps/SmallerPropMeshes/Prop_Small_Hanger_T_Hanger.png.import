@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ds4pdij4pf70s"
+path.s3tc="res://.godot/imported/Prop_Small_Hanger_T_Hanger.png-7a2b23a15f741d1ae219139ceb8acfdd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "8eb50e2fdb3ec5e0a72f49fa03c43fbf"
+}
+
+[deps]
+
+source_file="res://3dAssets/Props/LargerProps/SmallerPropMeshes/Prop_Small_Hanger_T_Hanger.png"
+dest_files=["res://.godot/imported/Prop_Small_Hanger_T_Hanger.png-7a2b23a15f741d1ae219139ceb8acfdd.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
