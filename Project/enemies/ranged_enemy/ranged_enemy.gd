@@ -16,6 +16,9 @@ extends CharacterBody3D
 @onready var vision_raycast: RayCast3D = $vision_raycast
 @onready var memory_timer: Timer = $MemoryTimer
 
+#SFX
+@onready var enemyDamage = $enemyDamage
+
 var player = null
 var state
 var has_hit_player = false
@@ -110,6 +113,7 @@ func _on_vision_timer_timeout() -> void:
 
 func take_damage(damage):
 	health = health - damage
+	enemyDamage.play()
 	if health <= 0:
 		queue_free()
 
