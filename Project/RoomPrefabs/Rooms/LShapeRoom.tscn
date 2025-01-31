@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://p4ry2wwy8dib"]
+[gd_scene load_steps=7 format=3 uid="uid://p4ry2wwy8dib"]
 
 [ext_resource type="MeshLibrary" uid="uid://susu0lo68x3u" path="res://addons/CorrectMeshLibraries/RoomTiles.tres" id="1_de8a4"]
 [ext_resource type="PackedScene" uid="uid://b812oyrink813" path="res://3dAssets/Props/LargerProps/BigProps/prop_shelf_2.tscn" id="2_avqed"]
 [ext_resource type="PackedScene" uid="uid://bd1vku8oiqprl" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_beaker_1.tscn" id="3_8vp8h"]
 [ext_resource type="PackedScene" uid="uid://chh66fhgnq4b7" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_box.tscn" id="4_uugps"]
-[ext_resource type="PackedScene" uid="uid://b26pyc88mcln8" path="res://3dAssets/Props/LargerProps/SmallerProps/prop_small_beaker_2.tscn" id="5_58b0m"]
 [ext_resource type="PackedScene" uid="uid://c5u32ftol02r4" path="res://3dAssets/Props/LargerProps/BigProps/prop_countertop.tscn" id="6_8yt2a"]
 [ext_resource type="PackedScene" uid="uid://6sw3rfvgjy2o" path="res://3dAssets/Props/LargerProps/BigProps/prop_countertop_sink_2.tscn" id="7_k4ri5"]
 
@@ -135,9 +134,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.4, 3.5, 62.4)
 [node name="Prop_Small_Box7" parent="." instance=ExtResource("4_uugps")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.3, 3.5, 62.4)
 
-[node name="Prop_Small_Beaker5" parent="." instance=ExtResource("5_58b0m")]
-transform = Transform3D(-0.0377842, -0.543782, -0.288806, 0.698756, -0.0230164, -0.0314203, 0.0176753, -0.25253, 0.62476, -19.2323, 45.1227, 55.6462)
-
 [node name="Prop_Small_Box4" parent="." instance=ExtResource("4_uugps")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.9, 3.5, 62.4)
 
@@ -211,13 +207,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.7, 3.5, 62.4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.9, 3.5, 62.4)
 
 [node name="Prop_Countertop2" parent="." instance=ExtResource("6_8yt2a")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.5, 1.6, 46.5)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.5, 1.55, 46.55)
 
 [node name="Prop_Countertop3" parent="." instance=ExtResource("6_8yt2a")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 29.7, 1.6, 46.5)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 29.7, 1.55, 46.55)
+
+[node name="Prop_Countertop5" parent="." instance=ExtResource("6_8yt2a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 24.3, 1.55, 46.55)
+
+[node name="Prop_Countertop6" parent="." instance=ExtResource("6_8yt2a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.5, 1.55, 46.55)
 
 [node name="Prop_CountertopSink2" parent="." instance=ExtResource("7_k4ri5")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27.9, 1.6, 46.5)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27.9, 1.55, 46.55)
 
 [node name="Prop_Countertop4" parent="." instance=ExtResource("6_8yt2a")]
-transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 26.1, 1.6, 46.5)
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 26.1, 1.55, 46.55)
