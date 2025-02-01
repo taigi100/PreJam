@@ -11,6 +11,8 @@ var player = null
 @onready var ray_cast_3d: RayCast3D = $Armature/RayCast3D
 @onready var vision_area: Area3D = $VisionArea
 @onready var vision_raycast: RayCast3D = $vision_raycast
+#SFX
+@onready var enemyDamage = $enemyDamage
 
 
 	
@@ -61,6 +63,7 @@ func _target_in_range():
 	return global_position.distance_to(player.global_position) < ATTACK_RANGE
 
 func take_damage(_dmg):
+	enemyDamage.play()
 	queue_free()
 
 func _on_vision_timer_timeout() -> void:
