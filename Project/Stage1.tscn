@@ -87,6 +87,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.285, 0, 106.469)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.3916, 0, 197.298)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.815279, 0.419839, -0.398816, -0.570177, 0.461801, -0.67944, -0.101082, 0.781329, 0.615879, 0, 0, 0)
+light_energy = 0.838
+shadow_enabled = true
 
 [node name="Node3D20" parent="." instance=ExtResource("3_g5tx3")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 196.559, 0, 163.421)
